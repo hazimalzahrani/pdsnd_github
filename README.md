@@ -15,3 +15,6 @@ this project was done for completing a project for Udacity, they supplied the da
 
 ### Udacity course name
 the course is called programming for data science with python
+
+### course overview
+this course consisted of an introduction in both SQL and Python, as well as vergion control with git
