@@ -2,7 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
-
+# CITY_DATA is a dictionary linking the names of cities with thier files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -18,17 +18,21 @@ def get_filters():
     """
     
     print('Hello! Let\'s explore some US bikeshare data!')
+
     #get user input for city (chicago, new york city, washington).
+
     city=input("what city you want to check? ").lower()
     while city !='new york city' and city !='chicago' and city != 'washington':
         city=input('please choose a valid city ')
     
-    #get user input for month (all, january, february, ... , june)
+    #get user input for month (all, january, february, ... , june), and notify if he made a mistake.
     
     month=input('what month you want to check, or "all" to apply no filter ').title()
     while month!='January' and month!='February' and month!='March' and month!='April' and month!='May' and month!='June' and month!="All":
         month=input("please write a valid month name ").title()
-    #get user input for day of week (all, monday, tuesday, ... sunday)
+
+    #get user input for day of week (all, monday, tuesday, ... sunday), and notify if he made a mistake.
+
     day=input('what day of the week you want to check, or "all" to applly no filters ').title()
     while day!='Saturday' and day!='Sunday' and day!='Monday' and day!='Tuesday' and day!='Wednesday' and day!='Thursday' and day!='Friday' and day!='Saturday' and day!='All':
         day=input("please write a valid day of week name ").title()
@@ -192,7 +196,11 @@ def user_stats(df):
 
 
 def view_data(df):
-    '''Displays a request for the user to see the data table.'''
+    '''Displays a request for the user to see the data table.
+    Args:
+        df- pandas DataFrame containg all the colums modified and added
+    Returns:
+        df - five rows of the DataFrame upon request'''
     view_data=input("would you like to see five rows of the data?").lower()
     start_loc=5
     old_loc=0
