@@ -5,7 +5,7 @@ project and Readme file were created at jan/30/2021
 This project is called bikeshare project
 
 ### Description
-Describe what your project is about and what it does
+This project searches a data base for bikesharing using Python.
 
 ### Files used
 Include the files used
