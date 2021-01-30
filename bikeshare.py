@@ -192,7 +192,11 @@ def user_stats(df):
 
 
 def view_data(df):
-    '''Displays a request for the user to see the data table.'''
+    '''Displays a request for the user to see the data table.
+    Args:
+        df- pandas DataFrame containg all the colums modified and added
+    Returns:
+        df - five rows of the DataFrame upon request'''
     view_data=input("would you like to see five rows of the data?").lower()
     start_loc=5
     old_loc=0
