@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+project and Readme file were created at jan/30/2021
 
 ### Project Title
-Replace the Project Title
+This project is called bikeshare project
 
 ### Description
 Describe what your project is about and what it does
